@@ -66,6 +66,55 @@ Frame46 = Instance.new("Frame")
 TextLabel47 = Instance.new("TextLabel")
 TextButton48 = Instance.new("TextButton")
 LocalScript49 = Instance.new("LocalScript")
+Frame50 = Instance.new("Frame")
+TextButton51 = Instance.new("TextButton")
+LocalScript52 = Instance.new("LocalScript")
+TextLabel53 = Instance.new("TextLabel")
+Frame54 = Instance.new("Frame")
+TextButton55 = Instance.new("TextButton")
+LocalScript56 = Instance.new("LocalScript")
+TextButton57 = Instance.new("TextButton")
+LocalScript58 = Instance.new("LocalScript")
+TextButton59 = Instance.new("TextButton")
+LocalScript60 = Instance.new("LocalScript")
+TextButton61 = Instance.new("TextButton")
+LocalScript62 = Instance.new("LocalScript")
+TextButton63 = Instance.new("TextButton")
+LocalScript64 = Instance.new("LocalScript")
+TextButton65 = Instance.new("TextButton")
+LocalScript66 = Instance.new("LocalScript")
+TextButton67 = Instance.new("TextButton")
+LocalScript68 = Instance.new("LocalScript")
+Frame69 = Instance.new("Frame")
+TextButton70 = Instance.new("TextButton")
+LocalScript71 = Instance.new("LocalScript")
+TextButton72 = Instance.new("TextButton")
+LocalScript73 = Instance.new("LocalScript")
+TextButton74 = Instance.new("TextButton")
+LocalScript75 = Instance.new("LocalScript")
+TextButton76 = Instance.new("TextButton")
+LocalScript77 = Instance.new("LocalScript")
+TextButton78 = Instance.new("TextButton")
+LocalScript79 = Instance.new("LocalScript")
+TextButton80 = Instance.new("TextButton")
+LocalScript81 = Instance.new("LocalScript")
+TextButton82 = Instance.new("TextButton")
+LocalScript83 = Instance.new("LocalScript")
+Frame84 = Instance.new("Frame")
+TextButton85 = Instance.new("TextButton")
+LocalScript86 = Instance.new("LocalScript")
+TextButton87 = Instance.new("TextButton")
+LocalScript88 = Instance.new("LocalScript")
+TextButton89 = Instance.new("TextButton")
+LocalScript90 = Instance.new("LocalScript")
+TextButton91 = Instance.new("TextButton")
+LocalScript92 = Instance.new("LocalScript")
+TextButton93 = Instance.new("TextButton")
+LocalScript94 = Instance.new("LocalScript")
+TextButton95 = Instance.new("TextButton")
+LocalScript96 = Instance.new("LocalScript")
+TextButton97 = Instance.new("TextButton")
+LocalScript98 = Instance.new("LocalScript")
 ScreenGui0.Name = "Scythe Hub"
 ScreenGui0.Parent = mas
 ScreenGui0.ResetOnSpawn = false
@@ -181,6 +230,12 @@ if game.PlaceId == 418574428 then
 	
 	if game.PlaceId == 4872321990 then
 	script.Parent.SkyBlock.Visible = true
+	
+		script.Parent.NotDetected.Visible = false
+	end
+	
+	if game.PlaceId == 5118969548 then
+	script.Parent.Spider.Visible = true
 	
 		script.Parent.NotDetected.Visible = false
 end
@@ -317,7 +372,7 @@ TextButton15.BackgroundColor3 = Color3.new(0.321569, 0.113725, 1)
 TextButton15.ZIndex = 5
 TextButton15.Font = Enum.Font.SourceSans
 TextButton15.FontSize = Enum.FontSize.Size14
-TextButton15.Text = "Delete Doors"
+TextButton15.Text = "Btools"
 TextButton15.TextColor = BrickColor.new("Really black")
 TextButton15.TextColor3 = Color3.new(0, 0, 0)
 TextButton15.TextScaled = true
@@ -4134,6 +4189,520 @@ table.insert(cors,sandbox(LocalScript49,function()
 script.Parent.MouseButton1Click:Connect(function()
 	PastebinBanned = false
 loadstring(game:HttpGet("https://system-exodus.com/scripts/Skyblock/Skyblock.lua",true))()
+end)
+end))
+Frame50.Name = "Spider"
+Frame50.Parent = Frame1
+Frame50.Position = UDim2.new(-0.00191390922, 0, 0.151057407, 0)
+Frame50.Visible = false
+Frame50.Size = UDim2.new(0, 414, 0, 281)
+Frame50.BackgroundColor = BrickColor.new("Really black")
+Frame50.BackgroundColor3 = Color3.new(0, 0, 0)
+Frame50.BorderSizePixel = 0
+Frame50.ZIndex = 5
+TextButton51.Parent = Frame50
+TextButton51.Position = UDim2.new(0.0579710156, 0, 0.251253515, 0)
+TextButton51.Size = UDim2.new(0, 164, 0, 53)
+TextButton51.BackgroundColor = BrickColor.new("Royal purple")
+TextButton51.BackgroundColor3 = Color3.new(0.321569, 0.113725, 1)
+TextButton51.ZIndex = 5
+TextButton51.Font = Enum.Font.SourceSans
+TextButton51.FontSize = Enum.FontSize.Size14
+TextButton51.Text = "Item TP"
+TextButton51.TextColor = BrickColor.new("Really black")
+TextButton51.TextColor3 = Color3.new(0, 0, 0)
+TextButton51.TextScaled = true
+TextButton51.TextSize = 14
+TextButton51.TextWrap = true
+TextButton51.TextWrapped = true
+LocalScript52.Parent = TextButton51
+table.insert(cors,sandbox(LocalScript52,function()
+script.Parent.MouseButton1Click:Connect(function()
+	script.Parent.Parent.ItemTP.Visible = true
+end)
+end))
+TextLabel53.Name = "title"
+TextLabel53.Parent = Frame50
+TextLabel53.Position = UDim2.new(0, 0, 0.0249110311, 0)
+TextLabel53.Size = UDim2.new(0, 414, 0, 50)
+TextLabel53.BackgroundColor = BrickColor.new("Institutional white")
+TextLabel53.BackgroundColor3 = Color3.new(1, 1, 1)
+TextLabel53.BackgroundTransparency = 1
+TextLabel53.ZIndex = 5
+TextLabel53.Font = Enum.Font.SourceSans
+TextLabel53.FontSize = Enum.FontSize.Size36
+TextLabel53.Text = "Spider Has Been Detected"
+TextLabel53.TextColor = BrickColor.new("Royal purple")
+TextLabel53.TextColor3 = Color3.new(0.321569, 0.113725, 1)
+TextLabel53.TextSize = 34
+TextLabel53.TextWrap = true
+TextLabel53.TextWrapped = true
+Frame54.Name = "ItemTP"
+Frame54.Parent = Frame50
+Frame54.Position = UDim2.new(-0.00191390922, 0, 0.202846974, 0)
+Frame54.Visible = false
+Frame54.Size = UDim2.new(0, 414, 0, 223)
+Frame54.BackgroundColor = BrickColor.new("Really black")
+Frame54.BackgroundColor3 = Color3.new(0, 0, 0)
+Frame54.BorderSizePixel = 0
+Frame54.ZIndex = 6
+TextButton55.Parent = Frame54
+TextButton55.Position = UDim2.new(0.751207709, 0, 0.780401528, 0)
+TextButton55.Size = UDim2.new(0, 92, 0, 30)
+TextButton55.BackgroundColor = BrickColor.new("Royal purple")
+TextButton55.BackgroundColor3 = Color3.new(0.321569, 0.113725, 1)
+TextButton55.ZIndex = 6
+TextButton55.Font = Enum.Font.SourceSans
+TextButton55.FontSize = Enum.FontSize.Size14
+TextButton55.Text = "Back"
+TextButton55.TextColor = BrickColor.new("Really black")
+TextButton55.TextColor3 = Color3.new(0, 0, 0)
+TextButton55.TextScaled = true
+TextButton55.TextSize = 14
+TextButton55.TextWrap = true
+TextButton55.TextWrapped = true
+LocalScript56.Parent = TextButton55
+table.insert(cors,sandbox(LocalScript56,function()
+script.Parent.MouseButton1Click:Connect(function()
+	script.Parent.Parent.Visible = false
+end)
+end))
+TextButton57.Parent = Frame54
+TextButton57.Position = UDim2.new(0.0821256042, 0, 0.0584284067, 0)
+TextButton57.Size = UDim2.new(0, 92, 0, 30)
+TextButton57.BackgroundColor = BrickColor.new("Royal purple")
+TextButton57.BackgroundColor3 = Color3.new(0.321569, 0.113725, 1)
+TextButton57.ZIndex = 6
+TextButton57.Font = Enum.Font.SourceSans
+TextButton57.FontSize = Enum.FontSize.Size14
+TextButton57.Text = "Wrench"
+TextButton57.TextColor = BrickColor.new("Really black")
+TextButton57.TextColor3 = Color3.new(0, 0, 0)
+TextButton57.TextScaled = true
+TextButton57.TextSize = 14
+TextButton57.TextWrap = true
+TextButton57.TextWrapped = true
+LocalScript58.Parent = TextButton57
+table.insert(cors,sandbox(LocalScript58,function()
+script.Parent.MouseButton1Click:Connect(function()
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game.Workspace.Items["Wrench"].Handle.CFrame + Vector3.new(0,0,0)
+end)
+end))
+TextButton59.Parent = Frame54
+TextButton59.Position = UDim2.new(0.393719792, 0, 0.0584284067, 0)
+TextButton59.Size = UDim2.new(0, 92, 0, 30)
+TextButton59.BackgroundColor = BrickColor.new("Royal purple")
+TextButton59.BackgroundColor3 = Color3.new(0.321569, 0.113725, 1)
+TextButton59.ZIndex = 6
+TextButton59.Font = Enum.Font.SourceSans
+TextButton59.FontSize = Enum.FontSize.Size14
+TextButton59.Text = "Battery"
+TextButton59.TextColor = BrickColor.new("Really black")
+TextButton59.TextColor3 = Color3.new(0, 0, 0)
+TextButton59.TextScaled = true
+TextButton59.TextSize = 14
+TextButton59.TextWrap = true
+TextButton59.TextWrapped = true
+LocalScript60.Parent = TextButton59
+table.insert(cors,sandbox(LocalScript60,function()
+script.Parent.MouseButton1Click:Connect(function()
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game.Workspace.Items["Battery"].Handle.CFrame + Vector3.new(0,0,0)
+end)
+end))
+TextButton61.Parent = Frame54
+TextButton61.Position = UDim2.new(0.698067605, 0, 0.0584284067, 0)
+TextButton61.Size = UDim2.new(0, 92, 0, 30)
+TextButton61.BackgroundColor = BrickColor.new("Royal purple")
+TextButton61.BackgroundColor3 = Color3.new(0.321569, 0.113725, 1)
+TextButton61.ZIndex = 6
+TextButton61.Font = Enum.Font.SourceSans
+TextButton61.FontSize = Enum.FontSize.Size14
+TextButton61.Text = "Crowbar"
+TextButton61.TextColor = BrickColor.new("Really black")
+TextButton61.TextColor3 = Color3.new(0, 0, 0)
+TextButton61.TextScaled = true
+TextButton61.TextSize = 14
+TextButton61.TextWrap = true
+TextButton61.TextWrapped = true
+LocalScript62.Parent = TextButton61
+table.insert(cors,sandbox(LocalScript62,function()
+script.Parent.MouseButton1Click:Connect(function()
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game.Workspace.Items["Crowbar"].Handle.CFrame + Vector3.new(0,0,0)
+end)
+end))
+TextButton63.Parent = Frame54
+TextButton63.Position = UDim2.new(0.0821256042, 0, 0.399235576, 0)
+TextButton63.Size = UDim2.new(0, 92, 0, 30)
+TextButton63.BackgroundColor = BrickColor.new("Royal purple")
+TextButton63.BackgroundColor3 = Color3.new(0.321569, 0.113725, 1)
+TextButton63.ZIndex = 6
+TextButton63.Font = Enum.Font.SourceSans
+TextButton63.FontSize = Enum.FontSize.Size14
+TextButton63.Text = "Bug Spray"
+TextButton63.TextColor = BrickColor.new("Really black")
+TextButton63.TextColor3 = Color3.new(0, 0, 0)
+TextButton63.TextScaled = true
+TextButton63.TextSize = 14
+TextButton63.TextWrap = true
+TextButton63.TextWrapped = true
+LocalScript64.Parent = TextButton63
+table.insert(cors,sandbox(LocalScript64,function()
+script.Parent.MouseButton1Click:Connect(function()
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game.Workspace.Items["Bug Spray"].Handle.CFrame + Vector3.new(0,0,0)
+end)
+end))
+TextButton65.Parent = Frame54
+TextButton65.Position = UDim2.new(0.393719792, 0, 0.399235576, 0)
+TextButton65.Size = UDim2.new(0, 92, 0, 30)
+TextButton65.BackgroundColor = BrickColor.new("Royal purple")
+TextButton65.BackgroundColor3 = Color3.new(0.321569, 0.113725, 1)
+TextButton65.ZIndex = 6
+TextButton65.Font = Enum.Font.SourceSans
+TextButton65.FontSize = Enum.FontSize.Size14
+TextButton65.Text = "C4"
+TextButton65.TextColor = BrickColor.new("Really black")
+TextButton65.TextColor3 = Color3.new(0, 0, 0)
+TextButton65.TextScaled = true
+TextButton65.TextSize = 14
+TextButton65.TextWrap = true
+TextButton65.TextWrapped = true
+LocalScript66.Parent = TextButton65
+table.insert(cors,sandbox(LocalScript66,function()
+script.Parent.MouseButton1Click:Connect(function()
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game.Workspace.Items["C4"].Handle.CFrame + Vector3.new(0,0,0)
+end)
+end))
+TextButton67.Parent = Frame50
+TextButton67.Position = UDim2.new(0.553140104, 0, 0.251253515, 0)
+TextButton67.Size = UDim2.new(0, 164, 0, 53)
+TextButton67.BackgroundColor = BrickColor.new("Royal purple")
+TextButton67.BackgroundColor3 = Color3.new(0.321569, 0.113725, 1)
+TextButton67.ZIndex = 5
+TextButton67.Font = Enum.Font.SourceSans
+TextButton67.FontSize = Enum.FontSize.Size14
+TextButton67.Text = "Key TP"
+TextButton67.TextColor = BrickColor.new("Really black")
+TextButton67.TextColor3 = Color3.new(0, 0, 0)
+TextButton67.TextScaled = true
+TextButton67.TextSize = 14
+TextButton67.TextWrap = true
+TextButton67.TextWrapped = true
+LocalScript68.Parent = TextButton67
+table.insert(cors,sandbox(LocalScript68,function()
+script.Parent.MouseButton1Click:Connect(function()
+	script.Parent.Parent.KeyTP.Visible = true
+end)
+end))
+Frame69.Name = "KeyTP"
+Frame69.Parent = Frame50
+Frame69.Position = UDim2.new(-0.00191390922, 0, 0.202846974, 0)
+Frame69.Visible = false
+Frame69.Size = UDim2.new(0, 414, 0, 223)
+Frame69.BackgroundColor = BrickColor.new("Really black")
+Frame69.BackgroundColor3 = Color3.new(0, 0, 0)
+Frame69.BorderSizePixel = 0
+Frame69.ZIndex = 6
+TextButton70.Parent = Frame69
+TextButton70.Position = UDim2.new(0.751207709, 0, 0.780401528, 0)
+TextButton70.Size = UDim2.new(0, 92, 0, 30)
+TextButton70.BackgroundColor = BrickColor.new("Royal purple")
+TextButton70.BackgroundColor3 = Color3.new(0.321569, 0.113725, 1)
+TextButton70.ZIndex = 6
+TextButton70.Font = Enum.Font.SourceSans
+TextButton70.FontSize = Enum.FontSize.Size14
+TextButton70.Text = "Back"
+TextButton70.TextColor = BrickColor.new("Really black")
+TextButton70.TextColor3 = Color3.new(0, 0, 0)
+TextButton70.TextScaled = true
+TextButton70.TextSize = 14
+TextButton70.TextWrap = true
+TextButton70.TextWrapped = true
+LocalScript71.Parent = TextButton70
+table.insert(cors,sandbox(LocalScript71,function()
+script.Parent.MouseButton1Click:Connect(function()
+	script.Parent.Parent.Visible = false
+end)
+end))
+TextButton72.Parent = Frame69
+TextButton72.Position = UDim2.new(0.0821256042, 0, 0.0584284067, 0)
+TextButton72.Size = UDim2.new(0, 92, 0, 30)
+TextButton72.BackgroundColor = BrickColor.new("Royal purple")
+TextButton72.BackgroundColor3 = Color3.new(0.321569, 0.113725, 1)
+TextButton72.ZIndex = 6
+TextButton72.Font = Enum.Font.SourceSans
+TextButton72.FontSize = Enum.FontSize.Size14
+TextButton72.Text = "Purple Key"
+TextButton72.TextColor = BrickColor.new("Really black")
+TextButton72.TextColor3 = Color3.new(0, 0, 0)
+TextButton72.TextScaled = true
+TextButton72.TextSize = 14
+TextButton72.TextWrap = true
+TextButton72.TextWrapped = true
+LocalScript73.Parent = TextButton72
+table.insert(cors,sandbox(LocalScript73,function()
+script.Parent.MouseButton1Click:Connect(function()
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game.Workspace.Items["Purple Key"].Handle.CFrame + Vector3.new(0,0,0)
+end)
+end))
+TextButton74.Parent = Frame69
+TextButton74.Position = UDim2.new(0.393719792, 0, 0.0584284067, 0)
+TextButton74.Size = UDim2.new(0, 92, 0, 30)
+TextButton74.BackgroundColor = BrickColor.new("Royal purple")
+TextButton74.BackgroundColor3 = Color3.new(0.321569, 0.113725, 1)
+TextButton74.ZIndex = 6
+TextButton74.Font = Enum.Font.SourceSans
+TextButton74.FontSize = Enum.FontSize.Size14
+TextButton74.Text = "Green Key"
+TextButton74.TextColor = BrickColor.new("Really black")
+TextButton74.TextColor3 = Color3.new(0, 0, 0)
+TextButton74.TextScaled = true
+TextButton74.TextSize = 14
+TextButton74.TextWrap = true
+TextButton74.TextWrapped = true
+LocalScript75.Parent = TextButton74
+table.insert(cors,sandbox(LocalScript75,function()
+script.Parent.MouseButton1Click:Connect(function()
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game.Workspace.Items["Green Key"].Handle.CFrame + Vector3.new(0,0,0)
+end)
+end))
+TextButton76.Parent = Frame69
+TextButton76.Position = UDim2.new(0.698067605, 0, 0.0584284067, 0)
+TextButton76.Size = UDim2.new(0, 92, 0, 30)
+TextButton76.BackgroundColor = BrickColor.new("Royal purple")
+TextButton76.BackgroundColor3 = Color3.new(0.321569, 0.113725, 1)
+TextButton76.ZIndex = 6
+TextButton76.Font = Enum.Font.SourceSans
+TextButton76.FontSize = Enum.FontSize.Size14
+TextButton76.Text = "Orange Key"
+TextButton76.TextColor = BrickColor.new("Really black")
+TextButton76.TextColor3 = Color3.new(0, 0, 0)
+TextButton76.TextScaled = true
+TextButton76.TextSize = 14
+TextButton76.TextWrap = true
+TextButton76.TextWrapped = true
+LocalScript77.Parent = TextButton76
+table.insert(cors,sandbox(LocalScript77,function()
+script.Parent.MouseButton1Click:Connect(function()
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game.Workspace.Items["Orange Key"].Handle.CFrame + Vector3.new(0,0,0)
+end)
+end))
+TextButton78.Parent = Frame69
+TextButton78.Position = UDim2.new(0.0821256042, 0, 0.399235576, 0)
+TextButton78.Size = UDim2.new(0, 92, 0, 30)
+TextButton78.BackgroundColor = BrickColor.new("Royal purple")
+TextButton78.BackgroundColor3 = Color3.new(0.321569, 0.113725, 1)
+TextButton78.ZIndex = 6
+TextButton78.Font = Enum.Font.SourceSans
+TextButton78.FontSize = Enum.FontSize.Size14
+TextButton78.Text = "Blue Key"
+TextButton78.TextColor = BrickColor.new("Really black")
+TextButton78.TextColor3 = Color3.new(0, 0, 0)
+TextButton78.TextScaled = true
+TextButton78.TextSize = 14
+TextButton78.TextWrap = true
+TextButton78.TextWrapped = true
+LocalScript79.Parent = TextButton78
+table.insert(cors,sandbox(LocalScript79,function()
+script.Parent.MouseButton1Click:Connect(function()
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game.Workspace.Items["Blue Key"].Handle.CFrame + Vector3.new(0,0,0)
+end)
+end))
+TextButton80.Parent = Frame69
+TextButton80.Position = UDim2.new(0.393719792, 0, 0.399235576, 0)
+TextButton80.Size = UDim2.new(0, 92, 0, 30)
+TextButton80.BackgroundColor = BrickColor.new("Royal purple")
+TextButton80.BackgroundColor3 = Color3.new(0.321569, 0.113725, 1)
+TextButton80.ZIndex = 6
+TextButton80.Font = Enum.Font.SourceSans
+TextButton80.FontSize = Enum.FontSize.Size14
+TextButton80.Text = "Yellow Key"
+TextButton80.TextColor = BrickColor.new("Really black")
+TextButton80.TextColor3 = Color3.new(0, 0, 0)
+TextButton80.TextScaled = true
+TextButton80.TextSize = 14
+TextButton80.TextWrap = true
+TextButton80.TextWrapped = true
+LocalScript81.Parent = TextButton80
+table.insert(cors,sandbox(LocalScript81,function()
+script.Parent.MouseButton1Click:Connect(function()
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game.Workspace.Items["Yellow Key"].Handle.CFrame + Vector3.new(0,0,0)
+end)
+end))
+TextButton82.Parent = Frame69
+TextButton82.Position = UDim2.new(0.698067605, 0, 0.399235576, 0)
+TextButton82.Size = UDim2.new(0, 92, 0, 30)
+TextButton82.BackgroundColor = BrickColor.new("Royal purple")
+TextButton82.BackgroundColor3 = Color3.new(0.321569, 0.113725, 1)
+TextButton82.ZIndex = 6
+TextButton82.Font = Enum.Font.SourceSans
+TextButton82.FontSize = Enum.FontSize.Size14
+TextButton82.Text = "Red Key"
+TextButton82.TextColor = BrickColor.new("Really black")
+TextButton82.TextColor3 = Color3.new(0, 0, 0)
+TextButton82.TextScaled = true
+TextButton82.TextSize = 14
+TextButton82.TextWrap = true
+TextButton82.TextWrapped = true
+LocalScript83.Parent = TextButton82
+table.insert(cors,sandbox(LocalScript83,function()
+script.Parent.MouseButton1Click:Connect(function()
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game.Workspace.Items["Red Key"].Handle.CFrame + Vector3.new(0,0,0)
+end)
+end))
+Frame84.Name = "TP"
+Frame84.Parent = Frame50
+Frame84.Position = UDim2.new(-0.00191390922, 0, 0.213523135, 0)
+Frame84.Visible = false
+Frame84.Size = UDim2.new(0, 414, 0, 223)
+Frame84.BackgroundColor = BrickColor.new("Really black")
+Frame84.BackgroundColor3 = Color3.new(0, 0, 0)
+Frame84.BorderSizePixel = 0
+Frame84.ZIndex = 6
+TextButton85.Parent = Frame84
+TextButton85.Position = UDim2.new(0.751207709, 0, 0.780401528, 0)
+TextButton85.Size = UDim2.new(0, 92, 0, 30)
+TextButton85.BackgroundColor = BrickColor.new("Royal purple")
+TextButton85.BackgroundColor3 = Color3.new(0.321569, 0.113725, 1)
+TextButton85.ZIndex = 6
+TextButton85.Font = Enum.Font.SourceSans
+TextButton85.FontSize = Enum.FontSize.Size14
+TextButton85.Text = "Back"
+TextButton85.TextColor = BrickColor.new("Really black")
+TextButton85.TextColor3 = Color3.new(0, 0, 0)
+TextButton85.TextScaled = true
+TextButton85.TextSize = 14
+TextButton85.TextWrap = true
+TextButton85.TextWrapped = true
+LocalScript86.Parent = TextButton85
+table.insert(cors,sandbox(LocalScript86,function()
+script.Parent.MouseButton1Click:Connect(function()
+	script.Parent.Parent.Visible = false
+end)
+end))
+TextButton87.Parent = Frame84
+TextButton87.Position = UDim2.new(0.0821256042, 0, 0.0584284067, 0)
+TextButton87.Size = UDim2.new(0, 92, 0, 30)
+TextButton87.BackgroundColor = BrickColor.new("Royal purple")
+TextButton87.BackgroundColor3 = Color3.new(0.321569, 0.113725, 1)
+TextButton87.ZIndex = 6
+TextButton87.Font = Enum.Font.SourceSans
+TextButton87.FontSize = Enum.FontSize.Size14
+TextButton87.Text = "BackYard"
+TextButton87.TextColor = BrickColor.new("Really black")
+TextButton87.TextColor3 = Color3.new(0, 0, 0)
+TextButton87.TextScaled = true
+TextButton87.TextSize = 14
+TextButton87.TextWrap = true
+TextButton87.TextWrapped = true
+LocalScript88.Parent = TextButton87
+table.insert(cors,sandbox(LocalScript88,function()
+script.Parent.MouseButton1Click:Connect(function()
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(498.284576, 58.4980049, 75.1930084, -0.999992251, -2.88182145e-10, -0.00394841842, 6.0714167e-10, 1, -2.26753684e-07, 0.00394841842, -2.2675431e-07, -0.999992251)
+end)
+end))
+TextButton89.Parent = Frame84
+TextButton89.Position = UDim2.new(0.393719792, 0, 0.0584284067, 0)
+TextButton89.Size = UDim2.new(0, 92, 0, 30)
+TextButton89.BackgroundColor = BrickColor.new("Royal purple")
+TextButton89.BackgroundColor3 = Color3.new(0.321569, 0.113725, 1)
+TextButton89.ZIndex = 6
+TextButton89.Font = Enum.Font.SourceSans
+TextButton89.FontSize = Enum.FontSize.Size14
+TextButton89.Text = "Top Of Attic"
+TextButton89.TextColor = BrickColor.new("Really black")
+TextButton89.TextColor3 = Color3.new(0, 0, 0)
+TextButton89.TextScaled = true
+TextButton89.TextSize = 14
+TextButton89.TextWrap = true
+TextButton89.TextWrapped = true
+LocalScript90.Parent = TextButton89
+table.insert(cors,sandbox(LocalScript90,function()
+script.Parent.MouseButton1Click:Connect(function()
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(500.401978, 89.4980011, 26.8641777, -0.95749557, -3.55836619e-07, -0.288447857, 2.25834356e-08, 1, -1.30859075e-06, 0.288447857, -1.25948395e-06, -0.95749557)
+end)
+end))
+TextButton91.Parent = Frame84
+TextButton91.Position = UDim2.new(0.698067605, 0, 0.0584284067, 0)
+TextButton91.Size = UDim2.new(0, 92, 0, 30)
+TextButton91.BackgroundColor = BrickColor.new("Royal purple")
+TextButton91.BackgroundColor3 = Color3.new(0.321569, 0.113725, 1)
+TextButton91.ZIndex = 6
+TextButton91.Font = Enum.Font.SourceSans
+TextButton91.FontSize = Enum.FontSize.Size14
+TextButton91.Text = "Downstairs"
+TextButton91.TextColor = BrickColor.new("Really black")
+TextButton91.TextColor3 = Color3.new(0, 0, 0)
+TextButton91.TextScaled = true
+TextButton91.TextSize = 14
+TextButton91.TextWrap = true
+TextButton91.TextWrapped = true
+LocalScript92.Parent = TextButton91
+table.insert(cors,sandbox(LocalScript92,function()
+script.Parent.MouseButton1Click:Connect(function()
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(514.89917, 61.4980049, -17.0622845, 0.963655353, -2.53391192e-08, -0.267148614, 3.71438347e-08, 1, 3.91345623e-08, 0.267148614, -4.76351474e-08, 0.963655353)
+end)
+end))
+TextButton93.Parent = Frame84
+TextButton93.Position = UDim2.new(0.0821256042, 0, 0.399235576, 0)
+TextButton93.Size = UDim2.new(0, 92, 0, 30)
+TextButton93.BackgroundColor = BrickColor.new("Royal purple")
+TextButton93.BackgroundColor3 = Color3.new(0.321569, 0.113725, 1)
+TextButton93.ZIndex = 6
+TextButton93.Font = Enum.Font.SourceSans
+TextButton93.FontSize = Enum.FontSize.Size14
+TextButton93.Text = "Hallway"
+TextButton93.TextColor = BrickColor.new("Really black")
+TextButton93.TextColor3 = Color3.new(0, 0, 0)
+TextButton93.TextScaled = true
+TextButton93.TextSize = 14
+TextButton93.TextWrap = true
+TextButton93.TextWrapped = true
+LocalScript94.Parent = TextButton93
+table.insert(cors,sandbox(LocalScript94,function()
+script.Parent.MouseButton1Click:Connect(function()
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(502.491455, 75.4980011, 21.1296158, 0.988889515, -9.36899891e-09, -0.148652464, -3.92359834e-09, 1, -8.91273757e-08, 0.148652464, 8.87203839e-08, 0.988889515)
+end)
+end))
+TextButton95.Parent = Frame84
+TextButton95.Position = UDim2.new(0.393719792, 0, 0.399235576, 0)
+TextButton95.Size = UDim2.new(0, 92, 0, 30)
+TextButton95.BackgroundColor = BrickColor.new("Royal purple")
+TextButton95.BackgroundColor3 = Color3.new(0.321569, 0.113725, 1)
+TextButton95.ZIndex = 6
+TextButton95.Font = Enum.Font.SourceSans
+TextButton95.FontSize = Enum.FontSize.Size14
+TextButton95.Text = "Front"
+TextButton95.TextColor = BrickColor.new("Really black")
+TextButton95.TextColor3 = Color3.new(0, 0, 0)
+TextButton95.TextScaled = true
+TextButton95.TextSize = 14
+TextButton95.TextWrap = true
+TextButton95.TextWrapped = true
+LocalScript96.Parent = TextButton95
+table.insert(cors,sandbox(LocalScript96,function()
+script.Parent.MouseButton1Click:Connect(function()
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(520.033875, 58.4980049, -58.3974304, 0.247536778, -3.16485327e-08, 0.968878508, 2.02348751e-08, 1, 2.74953535e-08, -0.968878508, 1.27990241e-08, 0.247536778)
+end)
+end))
+TextButton97.Parent = Frame50
+TextButton97.Position = UDim2.new(0.299516886, 0, 0.514598727, 0)
+TextButton97.Size = UDim2.new(0, 164, 0, 53)
+TextButton97.BackgroundColor = BrickColor.new("Royal purple")
+TextButton97.BackgroundColor3 = Color3.new(0.321569, 0.113725, 1)
+TextButton97.ZIndex = 5
+TextButton97.Font = Enum.Font.SourceSans
+TextButton97.FontSize = Enum.FontSize.Size14
+TextButton97.Text = "Location TP"
+TextButton97.TextColor = BrickColor.new("Really black")
+TextButton97.TextColor3 = Color3.new(0, 0, 0)
+TextButton97.TextScaled = true
+TextButton97.TextSize = 14
+TextButton97.TextWrap = true
+TextButton97.TextWrapped = true
+LocalScript98.Parent = TextButton97
+table.insert(cors,sandbox(LocalScript98,function()
+script.Parent.MouseButton1Click:Connect(function()
+	script.Parent.Parent.TP.Visible = true
 end)
 end))
 for i,v in pairs(mas:GetChildren()) do
