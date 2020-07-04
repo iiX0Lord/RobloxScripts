@@ -241,7 +241,7 @@ if game.PlaceId == 155615604 then
 script.Parent.NotDetected.Visible = false
 end
 
-if game.PlaceId == 418574428 then
+if game.PlaceId == 418574428 or 723892176 then
 	script.Parent["Attack On Titan Downfall"].Visible = true
 	
 		script.Parent.NotDetected.Visible = false
