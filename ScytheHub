@@ -1,4 +1,26 @@
 
+
+--[[Credits to other gui makers]]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 --Converted with ttyyuu12345's model to script plugin v4
 function sandbox(var,func)
 	local env = getfenv(func)
@@ -123,6 +145,7 @@ Frame103 = Instance.new("Frame")
 TextButton104 = Instance.new("TextButton")
 LocalScript105 = Instance.new("LocalScript")
 TextLabel106 = Instance.new("TextLabel")
+LocalScript107 = Instance.new("LocalScript")
 ScreenGui0.Name = "Scythe Hub"
 ScreenGui0.Parent = mas
 ScreenGui0.ResetOnSpawn = false
@@ -224,7 +247,7 @@ if game.PlaceId == 155615604 then
 script.Parent.NotDetected.Visible = false
 end
 
-if game.PlaceId == 418574428 or 723892176 then
+if game.PlaceId == 418574428 then
 	script.Parent["Attack On Titan Downfall"].Visible = true
 	
 		script.Parent.NotDetected.Visible = false
@@ -4824,6 +4847,170 @@ TextLabel106.TextColor3 = Color3.new(0.321569, 0.113725, 1)
 TextLabel106.TextSize = 25
 TextLabel106.TextWrap = true
 TextLabel106.TextWrapped = true
+LocalScript107.Name = "DebugMode"
+LocalScript107.Parent = Frame1
+table.insert(cors,sandbox(LocalScript107,function()
+wait(9.3)
+local Player = game.Players.LocalPlayer
+local Mouse = Player:GetMouse()
+
+local Enabled = false
+
+
+game:GetService("UserInputService").InputBegan:connect(function(inputObject, gameProcessedEvent)
+	    if inputObject.KeyCode == Enum.KeyCode.RightAlt then
+		if Enabled == false then
+			Enabled = true
+		local NotificationBindable = Instance.new("BindableFunction")
+NotificationBindable.OnInvoke = callback
+        game.StarterGui:SetCore("SendNotification", {
+	Title = "Debug";
+	Text = "Debug Mode Enabled";
+	Icon = "";
+	Duration = 2;
+	Callback = NotificationBindable;
+			})
+		else
+			Enabled = false
+		local NotificationBindable = Instance.new("BindableFunction")
+NotificationBindable.OnInvoke = callback
+        game.StarterGui:SetCore("SendNotification", {
+	Title = "Debug";
+	Text = "Debug Mode Disabled";
+	Icon = "";
+	Duration = 2;
+	Callback = NotificationBindable;
+			})
+			end
+    end 
+end)
+
+Mouse.KeyDown:Connect(function(key)
+	if key == "b" then
+		if Enabled == false then return end
+		script.Parent.BoatTresure.Visible = true
+		script.Parent.BigPaintball.Visible = false
+		script.Parent["Attack On Titan Downfall"].Visible = false
+		script.Parent.PrisonLife.Visible = false
+		script.Parent.RedWood.Visible = false
+		script.Parent.SkyBlock.Visible = false
+		script.Parent.Spider.Visible = false
+		script.Parent.TowerOfHell.Visible = false
+	end
+end)
+
+Mouse.KeyDown:Connect(function(key)
+	if key == "n" then
+		if Enabled == false then return end
+		script.Parent.BigPaintball.Visible = true
+		script.Parent.BoatTresure.Visible = false
+		script.Parent["Attack On Titan Downfall"].Visible = false
+		script.Parent.PrisonLife.Visible = false
+		script.Parent.RedWood.Visible = false
+		script.Parent.SkyBlock.Visible = false
+		script.Parent.Spider.Visible = false
+		script.Parent.TowerOfHell.Visible = false
+	end
+end)
+
+Mouse.KeyDown:Connect(function(key)
+	if key == "m" then
+		if Enabled == false then return end
+		script.Parent["Attack On Titan Downfall"].Visible = true
+		script.Parent.BoatTresure.Visible = false
+		script.Parent.BigPaintball.Visible = false
+		script.Parent.PrisonLife.Visible = false
+		script.Parent.RedWood.Visible = false
+		script.Parent.SkyBlock.Visible = false
+		script.Parent.Spider.Visible = false
+		script.Parent.TowerOfHell.Visible = false
+	end
+end)
+
+Mouse.KeyDown:Connect(function(key)
+	if key == "v" then
+		if Enabled == false then return end
+		script.Parent.PrisonLife.Visible = true
+		script.Parent.BoatTresure.Visible = false
+		script.Parent.BigPaintball.Visible = false
+		script.Parent["Attack On Titan Downfall"].Visible = false
+		script.Parent.RedWood.Visible = false
+		script.Parent.SkyBlock.Visible = false
+		script.Parent.Spider.Visible = false
+		script.Parent.TowerOfHell.Visible = false
+	end
+end)
+
+Mouse.KeyDown:Connect(function(key)
+	if key == "c" then
+		if Enabled == false then return end
+		script.Parent.RedWood.Visible = true
+		script.Parent.BoatTresure.Visible = false
+		script.Parent.BigPaintball.Visible = false
+		script.Parent["Attack On Titan Downfall"].Visible = false
+		script.Parent.PrisonLife.Visible = false
+		script.Parent.SkyBlock.Visible = false
+		script.Parent.Spider.Visible = false
+		script.Parent.TowerOfHell.Visible = false
+	end
+end)
+
+Mouse.KeyDown:Connect(function(key)
+	if key == "x" then
+		if Enabled == false then return end
+		script.Parent.SkyBlock.Visible = true
+		script.Parent.BoatTresure.Visible = false
+		script.Parent.BigPaintball.Visible = false
+		script.Parent["Attack On Titan Downfall"].Visible = false
+		script.Parent.PrisonLife.Visible = false
+		script.Parent.RedWood.Visible = false
+		script.Parent.Spider.Visible = false
+		script.Parent.TowerOfHell.Visible = false
+	end
+end)
+
+Mouse.KeyDown:Connect(function(key)
+	if key == "z" then
+		if Enabled == false then return end
+		script.Parent.Spider.Visible = true
+		script.Parent.BoatTresure.Visible = false
+		script.Parent.BigPaintball.Visible = false
+		script.Parent["Attack On Titan Downfall"].Visible = false
+		script.Parent.PrisonLife.Visible = false
+		script.Parent.RedWood.Visible = false
+		script.Parent.SkyBlock.Visible = false
+		script.Parent.TowerOfHell.Visible = false
+	end
+end)
+
+Mouse.KeyDown:Connect(function(key)
+	if key == "l" then
+		if Enabled == false then return end
+		script.Parent.TowerOfHell.Visible = true
+		script.Parent.BoatTresure.Visible = false
+		script.Parent.BigPaintball.Visible = false
+		script.Parent["Attack On Titan Downfall"].Visible = false
+		script.Parent.PrisonLife.Visible = false
+		script.Parent.RedWood.Visible = false
+		script.Parent.SkyBlock.Visible = false
+		script.Parent.Spider.Visible = false
+	end
+end)
+
+Mouse.KeyDown:Connect(function(key)
+	if key == "p" then
+		if Enabled == false then return end
+		script.Parent.TowerOfHell.Visible = false
+		script.Parent.BoatTresure.Visible = false
+		script.Parent.BigPaintball.Visible = false
+		script.Parent["Attack On Titan Downfall"].Visible = false
+		script.Parent.PrisonLife.Visible = false
+		script.Parent.RedWood.Visible = false
+		script.Parent.SkyBlock.Visible = false
+		script.Parent.Spider.Visible = false
+	end
+end)
+end))
 for i,v in pairs(mas:GetChildren()) do
 	v.Parent = game:GetService("Players").LocalPlayer.PlayerGui
 	pcall(function() v:MakeJoints() end)
