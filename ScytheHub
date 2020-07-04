@@ -1,25 +1,4 @@
 
-
-
---Credits To Other Gui Makers
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 --Converted with ttyyuu12345's model to script plugin v4
 function sandbox(var,func)
 	local env = getfenv(func)
@@ -140,6 +119,10 @@ Frame99 = Instance.new("Frame")
 TextLabel100 = Instance.new("TextLabel")
 TextButton101 = Instance.new("TextButton")
 LocalScript102 = Instance.new("LocalScript")
+Frame103 = Instance.new("Frame")
+TextButton104 = Instance.new("TextButton")
+LocalScript105 = Instance.new("LocalScript")
+TextLabel106 = Instance.new("TextLabel")
 ScreenGui0.Name = "Scythe Hub"
 ScreenGui0.Parent = mas
 ScreenGui0.ResetOnSpawn = false
@@ -267,6 +250,12 @@ if game.PlaceId == 418574428 or 723892176 then
 	
 	if game.PlaceId == 3527629287 then
 	script.Parent.BigPaintball.Visible = true
+	
+		script.Parent.NotDetected.Visible = false
+	end
+	
+	if game.PlaceId == 537413528 then
+	script.Parent.BoatTresure.Visible = true
 	
 		script.Parent.NotDetected.Visible = false
 end
@@ -4782,6 +4771,59 @@ script.Parent.MouseButton1Click:Connect(function()
 	loadstring(game.HttpGet(game, "https://pastebin.com/raw/EjikdmZx")) ()
 end)
 end))
+Frame103.Name = "BoatTresure"
+Frame103.Parent = Frame1
+Frame103.Position = UDim2.new(-0.00191390922, 0, 0.151057407, 0)
+Frame103.Visible = false
+Frame103.Size = UDim2.new(0, 414, 0, 281)
+Frame103.BackgroundColor = BrickColor.new("Really black")
+Frame103.BackgroundColor3 = Color3.new(0, 0, 0)
+Frame103.BorderSizePixel = 0
+Frame103.ZIndex = 5
+TextButton104.Parent = Frame103
+TextButton104.Position = UDim2.new(0.0917874426, 0, 0.229901195, 0)
+TextButton104.Size = UDim2.new(0, 341, 0, 162)
+TextButton104.BackgroundColor = BrickColor.new("Royal purple")
+TextButton104.BackgroundColor3 = Color3.new(0.321569, 0.113725, 1)
+TextButton104.ZIndex = 5
+TextButton104.Font = Enum.Font.SourceSans
+TextButton104.FontSize = Enum.FontSize.Size14
+TextButton104.Text = "Unlimited Items"
+TextButton104.TextColor = BrickColor.new("Really black")
+TextButton104.TextColor3 = Color3.new(0, 0, 0)
+TextButton104.TextScaled = true
+TextButton104.TextSize = 14
+TextButton104.TextWrap = true
+TextButton104.TextWrapped = true
+LocalScript105.Parent = TextButton104
+table.insert(cors,sandbox(LocalScript105,function()
+script.Parent.MouseButton1Down:connect(function()
+for i,v in pairs(game:GetService("Players").LocalPlayer.PlayerGui.BuildGui.InventoryFrame.ScrollingFrame.BlocksFrame:GetChildren()) do
+    if v:FindFirstChild("AmountText") then
+        v.AmountText.Text = 999
+        v.AmountText.Changed:Connect(function()
+            v.AmountText.Text = 999
+        end)
+    end
+end
+end)
+end))
+TextLabel106.Name = "title"
+TextLabel106.Parent = Frame103
+TextLabel106.Position = UDim2.new(0, 0, 0.0249110311, 0)
+TextLabel106.Size = UDim2.new(0, 414, 0, 50)
+TextLabel106.BackgroundColor = BrickColor.new("Institutional white")
+TextLabel106.BackgroundColor3 = Color3.new(1, 1, 1)
+TextLabel106.BackgroundTransparency = 1
+TextLabel106.ZIndex = 5
+TextLabel106.Font = Enum.Font.SourceSans
+TextLabel106.FontSize = Enum.FontSize.Size28
+TextLabel106.Text = "Build a boat for treasure Has Been Detected"
+TextLabel106.TextColor = BrickColor.new("Royal purple")
+TextLabel106.TextColor3 = Color3.new(0.321569, 0.113725, 1)
+TextLabel106.TextSize = 25
+TextLabel106.TextWrap = true
+TextLabel106.TextWrapped = true
 for i,v in pairs(mas:GetChildren()) do
 	v.Parent = game:GetService("Players").LocalPlayer.PlayerGui
 	pcall(function() v:MakeJoints() end)
